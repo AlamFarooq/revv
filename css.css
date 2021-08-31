@@ -1,16 +1,38 @@
+#mheader{
+    display: none;
+    height: 60px; 
+    background-image: linear-gradient(to left, rgb(28, 171, 162), rgb(28, 127, 171)); 
+    background-color: rgb(255, 255, 255); 
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 4px 0px; 
+    color: rgb(0, 0, 0); 
+    padding: 0px 15px;
+    position: relative;
+}
+
+#mheader p{
+    margin: 0px;
+    font-size: 9px;
+    color: white;
+    position: absolute;
+    white-space: nowrap;
+    bottom : 1px;
+    left: 20px;
+}
+
 #header{
     height: 60px;
     display: flex;
     justify-content: space-between;
-    position: relative;
+    width: 1140px ;
+    z-index: 100;
+
 
 }
 
 #nav{
-    margin-right: 10vw;
     font-size: 14px;
     margin-left: 140px;
-    right: 0px;
+    right: 20px;
 
     
 }
@@ -39,12 +61,38 @@
 }
 
 
+.afooter{
+    text-decoration: unset !important;
+    color: white ;
+    font-size: 1rem;
+
+}
+
+.afooter:hover{
+    color: #00bab5 ;
+    
+
+}
+
+#footer td{
+    width: 33%;
+
+}
+
+#footer table{
+    width: 100%;
+
+}
+
+#footer tr{
+    vertical-align: top;
+}
 
 #logo{
     position: relative;
     margin-left: 15px;
     height: 46px;
-    margin-left: 10vw;
+
 }
 
 #logo p {
@@ -72,9 +120,11 @@ body{
 
 #banner{
     width: 100%;
-    height: 580px;
-    background-color: blue;
+    height: 60vw;
 }
+
+
+
 
 
 .slideshow{
@@ -145,4 +195,207 @@ body{
 #footerl{
     margin-left: calc(50% - 570px);
     margin-right: calc(50% - 570px);
+}
+
+.desktop{
+    margin-left: calc(50% - 570px);
+    margin-right: calc(50% - 570px);
+}
+
+#works td{
+    width: 25%;
+    font-size: 14px;
+    font-weight: 200;
+    vertical-align: baseline;
+}
+
+#works td h1{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#works .circle{
+    color: rgba(0, 0, 0, 0.87);
+    background-color: rgb(255, 255, 255);
+    transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    box-shadow: rgb(0 0 0 / 25%) 0px 14px 45px, rgb(0 0 0 / 22%) 0px 10px 18px;
+    border-radius: 50%;
+    border: 8px solid #ddd;
+    height: 120px;
+    width: 120px;
+    margin: 0;
+    position : relative;
+
+}
+
+#works .circle:hover{
+    transform: scale(1.3);
+    background-color: #0ebaba!important;
+}
+
+#works .circle span{
+    position: absolute;
+    top: 50%;
+    transform: translate(50%, -50%);
+    right: 50%;
+    font-size: 60px;
+}
+
+.downloadapp{
+    position: relative;
+    background-image: url(./img/bg6.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#AvailableOn{
+    position: absolute;
+    bottom: 58%;
+    left: 40%;
+}
+
+#footer a{
+    text-decoration: none;
+    margin-left: 10px;
+    
+}
+#footer a:hover{
+    color: #00bab5 ;
+}
+
+.social_media{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #00bab5 ;
+    margin-right: 10px;
+}
+
+.link {
+    text-decoration: none;
+    margin-left: 10px;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 300;
+
+    
+}
+.link:hover{
+    color: #00bab5 ;
+}
+
+#serviceable a{
+    display: grid;
+    padding: 5px;
+   
+}
+
+#serviceable td{
+    vertical-align: top;
+}
+
+
+#journey tr{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#journey td{
+    padding: 10px;
+
+}
+
+
+#journey h2{
+    margin: 0px;
+}
+
+#journey p{
+    margin: 0px;
+    color: #4b4d5d;
+    font-weight: 300;
+}
+
+
+
+
+@media only screen and (max-width: 1140px){
+    #footerl{
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .desktop{
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    .slideshowbody{
+        width: 100%;
+        margin-left: 0px;
+
+    }
+
+    #nav{
+        transform: scale(0.7) translate(0,-50%);
+        top: 50%;
+        right: -12%;
+        white-space: nowrap;
+    }
+
+    #logo{
+        margin-left: 5px;
+}
+
+@media only screen and (max-width: 767px){
+    
+    #dheader{
+        display: none;
+    }
+
+    #mheader{
+        display: block;
+    }
+
+    #banner{
+        margin-top: 0px !important;
+    }
+
+    #social_media_p{
+        display: inline-flex !important;
+    }
+
+    #row_footer{
+        display: grid;
+    }
+
+    #works{
+        display: none;
+    }
+
+    .downloadapp{
+        display: none;
+    }
+
+    #serviceable{
+        display: none;
+    }
+
+    #slideshow3 .gallery-cell {
+        width: calc( 75% - 30px );
+        padding: 15px;
+    }
+    
+    #slideshow2 .gallery-cell {
+        width: calc( 75% - 30px );
+        padding: 15px;
+    }
+
 }
